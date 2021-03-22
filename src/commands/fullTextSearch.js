@@ -78,7 +78,7 @@ async function handler() {
     const matchingChallenges = challengeData.challenges.filter(challenge => {
         return JSON.stringify(challenge).toLowerCase().includes(tcommands.getArgValue('fullTextSearch').toLowerCase());
     });
-    console.log(`*** ${matchingChallenges.length} Results ***`);
+    console.log(`*** ${matchingChallenges.length} Result${matchingChallenges.length !== 1 ? 's' : ''} ***`);
     matchingChallenges.forEach(challenge => {
         console.log(`${challenge.name} [https://www.topcoder.com/challenges/${challenge.id}]`);
         if (tcommands.getArgValue('detail')) {
