@@ -21,7 +21,6 @@ async function handler() {
         process.exit(1);
     }
     if (tcommands.getArgValue('refreshData')) {
-        console.log(`*** Refreshing challenge data ***`);
         challengeData.refresh();
     }
 
