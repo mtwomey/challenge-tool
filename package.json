@@ -1,0 +1,20 @@
+{
+  "name": "challenge-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "challenge-tool.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fastify": "^3.14.0",
+    "open": "^8.0.3",
+    "tcommands": "github:mtwomey/tcommands#v1.1.0"
+  },
+  "bin": {
+    "challenge-tool": "src/challenge-tool.js"
+  }
+}
